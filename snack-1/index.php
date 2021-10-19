@@ -5,7 +5,7 @@
 // Stampiamo a schermo tutte le partite con questo schema.
 // Olimpia Milano - Cantù | 55-60
 
-$today_matches = [
+$todayMatches = [
   [
     "homeTeam" => "genova",
     "visitingTeam" => "milano",

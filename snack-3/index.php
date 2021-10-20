@@ -58,14 +58,15 @@ $posts = [
       <?php foreach( $posts as $date => $postsList ) { ?>
         <li>
           <h3><?= $date ?></h3>
-          <?php foreach( $postsList as $post ) { ?>
-            <ul>
-              <h5><?= "{$post["title"]}" ?></h5>
-              <?php foreach( $post as $key => $value ) { ?>
-                <li><?= "{$key} {$value}" ?></li>
-              <?php } ?> 
-            </ul>
-          <?php } ?>            
+          <ul>
+            <?php foreach( $postsList as $post ) { ?>
+              <li>
+                <h4><?= "{$post["title"]}" ?></h5>
+                <p><?= "{$post["text"]}" ?></p>
+                <h5><?= "(author: {$post["author"]})" ?></h5>
+              </li>
+            <?php } ?>                
+          </ul>
         </li>
       <?php } ?>
     </ul>
